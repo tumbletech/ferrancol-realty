@@ -800,6 +800,18 @@
         .form-row { grid-template-columns: 1fr; }
         footer { flex-direction: column; gap: 1.5rem; text-align: center; }
       }
+
+      .footer-legal {
+        display: block;
+        line-height: 1.8;
+      }
+
+.footer-credit {
+    display: block;
+    margin-top: 8px;
+    font-size: 11px;
+    opacity: 0.7;
+}
       </style>
     </head>
   <body>
@@ -1182,8 +1194,10 @@
   <!-- FOOTER -->
   <footer>
     <div class="footer-brand">Jennifer <span>Ferrancol</span> — Luxury Real Estate</div>
-    <div class="footer-legal">© 2025 · All Rights Reserved · PRC Licensed Broker</div><br>
-    <div class="footer-legal">Designed by Tumbletech</div>
+    <div class="footer-legal">
+      © 2025 · All Rights Reserved · PRC Licensed Broker
+      <span class="footer-credit">Designed by Tumbletech</span>  
+    </div>
     <div class="footer-social">
       <a href="#">FB</a>
       <a href="#">IG</a>
