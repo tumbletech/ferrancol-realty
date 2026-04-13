@@ -782,36 +782,41 @@
       .d1 { transition-delay: .1s; } .d2 { transition-delay: .2s; }
       .d3 { transition-delay: .3s; } .d4 { transition-delay: .4s; }
       
-      /* ─── RESPONSIVE ─── */
-      @media (max-width: 960px) {
-        nav { padding: 1.5rem 2rem; }
-        .hero { grid-template-columns: 1fr; }
-        .hero-right { display: none; }
-        .hero-left { padding: 0 2rem; }
-        .hero-stats { left: 2rem; right: 2rem; }
-        .about, .contact { grid-template-columns: 1fr; gap: 4rem; padding: 6rem 2rem; }
-        .about-visual { order: -1; }
-        .listings { padding: 6rem 2rem; }
-        .listings-grid { grid-template-columns: 1fr; }
-        .listing-card.featured { grid-column: span 1; }
-        .process { padding: 6rem 2rem; }
-        .steps { grid-template-columns: 1fr 1fr; gap: 3rem; }
-        .steps::before { display: none; }
-        .form-row { grid-template-columns: 1fr; }
-        footer { flex-direction: column; gap: 1.5rem; text-align: center; }
-      }
+        /* ─── RESPONSIVE ─── */
+        @media (max-width: 960px) {
+          nav { padding: 1.5rem 2rem; }
+          .hero { grid-template-columns: 1fr; }
+          .hero-right { display: none; }
+          .hero-left { padding: 0 2rem; }
+          .hero-stats { left: 2rem; right: 2rem; }
+          .about, .contact { grid-template-columns: 1fr; gap: 4rem; padding: 6rem 2rem; }
+          .about-visual { order: -1; }
+          .listings { padding: 6rem 2rem; }
+          .listings-grid { grid-template-columns: 1fr; }
+          .listing-card.featured { grid-column: span 1; }
+          .process { padding: 6rem 2rem; }
+          .steps { grid-template-columns: 1fr 1fr; gap: 3rem; }
+          .steps::before { display: none; }
+          .form-row { grid-template-columns: 1fr; }
+          footer { flex-direction: column; gap: 1.5rem; text-align: center; }
+        }
+  
+        .footer-legal {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          line-height: 1.8;
+        }
 
-      .footer-legal {
-        display: block;
-        line-height: 1.8;
-      }
-
-.footer-credit {
-    display: block;
-    margin-top: 8px;
-    font-size: 11px;
-    opacity: 0.7;
-}
+        .footer-credit {
+          margin-top: 6px;
+          font-size: inherit;
+          font-family: inherit;
+          letter-spacing: inherit;
+          text-transform: uppercase;
+          opacity: 1;
+        }
       </style>
     </head>
   <body>
